@@ -172,3 +172,10 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+# Ignorar o conteúdo da pasta data
+data/*
+
+# Permitir o arquivo .gitkeep dentro da pasta data
+!data/.gitkeep
