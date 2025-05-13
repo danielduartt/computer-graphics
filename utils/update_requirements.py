@@ -10,3 +10,5 @@ def update_requirements(output_file="requirements.txt"):
         print(f"✅ Requisitos atualizados em '{output_file}'")
     except Exception as e:
         print(f"❌ Erro ao atualizar requirements.txt: {e}")
+        
+update_requirements()
