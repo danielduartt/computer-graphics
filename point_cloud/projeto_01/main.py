@@ -58,7 +58,8 @@ if project_root not in sys.path:
 # ======================================================================
 
 # Download do dataset ModelNet
-DATA_DIR = download_modelnet.download()
+# DATA_DIR = download_modelnet.download()
+DATA_DIR = "/home/tiagodlb/computer-graphics/computer-graphics/data/ModelNet10"
 print(f"Dataset disponível em: {DATA_DIR}")
 
 def visualize_sample_mesh():
@@ -632,7 +633,7 @@ print(f"Cores disponíveis: {os.cpu_count()}")
 print(f"Número de pontos por nuvem: {NUM_POINTS}")
 print(f"Número de classes: {NUM_CLASSES}")
 print(f"Batch size: {BATCH_SIZE}")
-print("Para melhor performance, considere usar Google Colab ou serviços cloud com GPU")
+print("Para melhor performance, considere usar Google Collab pago ou serviços cloud com GPU")
 
 # ======================================================================
 # SALVAMENTO DO MODELO (OPCIONAL)
@@ -684,7 +685,6 @@ def load_model(model_path="pointnet_model.keras"):
 # Salva o modelo treinado
 save_model(model)
 
-# Exemplo de como carregar o modelo (comentado)
 # loaded_model = load_model("pointnet_model.keras")
 # if loaded_model is not None:
 #     # Teste do modelo carregado
